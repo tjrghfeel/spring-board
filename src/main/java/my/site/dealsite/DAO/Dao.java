@@ -12,7 +12,7 @@ public class Dao {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection("jdbc:mysql://localhost/dealsite?"
-            		+ "characterEncoding=UTF-8&serverTimezone=UTC", "root", "**2TJRGHmysql");
+            		+ "characterEncoding=UTF-8&serverTimezone=UTC", "aaa", "aaa");
 		}
 		catch(Exception e) {
 			e.printStackTrace();
