@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+span{
+	padding:3vw;
+}
+#sendMessageForm{
+	width:100%;
+	text-align:center;
+	
+}
+#sendMessageForm textarea{
+	width:95%;
+	height:40vw;
+	margin:3vw auto;
+	padding:0;
+}
+button{
+	display:inline-block;
+	background-color:white;
+	border:0.8px solid black;
+	padding:1.5vw 4vw;
+	margin:0 1vw;
+	color:black;
+	border-radius:3px;
+}
+
+
+
+
+

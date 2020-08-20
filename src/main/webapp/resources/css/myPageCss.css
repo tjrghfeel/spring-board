@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+
+html{
+	font-size:100%;
+}
+body{
+	margin:0;/*기본적으로 살짝 붕떠있어서 마진을 없애주었다*/
+	width:98vw;/*  */
+	height:48vw;
+}
+a:link{color:black; text-decoration:none;}
+a:visited{color:black; text-decoration:none;}
+a:hover{color:black; text-decoration:underline;}
+
+#myPage{
+	width: 98vw;
+    height: 48vw;
+    background-image:url('http://localhost/orangeBackground.png');
+	background-size:100% 120%;/*배경 이미지 크기가 좀 애매해서 적당히 늘여주었다*/
+	padding:0.1vw;
+	
+	
+}
+#myPage h3{
+	text-align:center;
+	color:white;
+	margin:20vw 0;
+}
+
+
+

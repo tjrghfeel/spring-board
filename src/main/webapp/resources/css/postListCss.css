@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+html{
+	font-size:100%;
+}
+body{
+	margin:0;/*기본적으로 살짝 붕떠있어서 마진을 없애주었다*/
+	width:98vw;/* height와 같이 기본적으로 내용에따라 크기가변하기때문에 그냥 처음부터 고정시켜주었다.  */
+	height:48vw;
+}
+a:link{color:black; text-decoration:none;}
+a:visited{color:black; text-decoration:none;}
+a:hover{color:black; text-decoration:underline;}
+
+/*게시글 리스트*/
+#postList{
+	width:100%;
+	margin:0 auto;
+}
+#postList table{
+	margin:0 auto;
+	border-collapse:collapse;
+}
+#postList th{
+	border-top:1.5px solid black;
+	padding:1vw 1vw;
+	font-weight:bold;
+}
+#postList th:nth-child(1){width:11vw;}
+#postList th:nth-child(2){width:36vw;}
+#postList th:nth-child(3){width:11vw;}
+#postList th:nth-child(4){width:18vw;}
+#postList th:nth-child(5){width:5vw;}
+
+#postList td{
+	border-top:0.5px solid #BDBDBD;
+	padding:0.3vw 0;
+	font-size:1em;
+	font-weight:400;
+}
+#postList td:nth-child(1){text-align:center;}
+#postList td:nth-child(2){}
+#postList td:nth-child(3){text-align:center;}
+#postList td:nth-child(4){text-align:center;}
+#postList td:nth-child(5){text-align:center;}
+
+.newCheck{
+	color:#FF8518;
+	padding:0 0.8vw;
+}
+.saleCompleteCheck{
+	padding:0 0.5vw;
+	border:1px solid #FF8518;
+	color:#FF8518;
+	font-size:0.8em;
+}
+	
+		/*아래 유틸바*/
+#utilityBar{
+	width:90%;
+	margin:1vw auto;
+}
+#utilityBar a{
+	float:right;
+	padding:0.2vw 1vw;
+	background-color:#FF8518;
+	color:white;
+}
+#indexAndSearch{
+	text-align:center;
+	background-color:#F6F6F6;
+	width:100%;
+	margin:0 auto;
+	font-size:0.9rem;
+}
+#pageIndex{
+	padding:2vw;
+	border-bottom: 0.5px solid #D5D5D5;
+}
+#pageIndex span{
+	padding:0 0.6vw;
+	cursor:pointer;
+}
+#currentIndex{
+	background-color:black;
+	color:white;
+}
+#utilityBar form{
+	padding:2vw;
+}
+
+

@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+html{
+	font-size:100%;
+}
+body{
+	margin:0;/*기본적으로 살짝 붕떠있어서 마진을 없애주었다*/
+	width:98vw;/*  */
+	height:48vw;
+}
+a:link{color:black; text-decoration:none;}
+a:visited{color:black; text-decoration:none;}
+a:hover{color:black; text-decoration:underline;}
+
+.startPage h1{
+	margin-top:10%;/*위의 padding값을 주었다는 문제의 부분. */
+	text-align:center;
+	color:white;
+	font-size:1rem;
+}
+.startPage button{
+	display:inline-block;
+	width:10vw;
+	height:3vw;
+	
+	border:0.3vw solid white;
+	opacity:0.9;
+	background-color:transparent;/*배경색을 투명으로*/
+	color:white;
+	cursor:pointer;/*커서 가져다댔을때 마우스 모양바뀌도록*/
+}
+
+#signUpPage{
+	width: 98vw;
+    height: 48vw;
+    background-image:url('http://localhost/orangeBackground.png');
+	background-size:100% 120%;/*배경 이미지 크기가 좀 애매해서 적당히 늘여주었다*/
+	padding:0.1vw;
+}
+#signUpTable {
+	width: 39vw;
+    height: 34vw;
+    margin: 3vw auto 1.5vw auto;
+    padding: 1vw;
+    border: 6px solid #EAEAEA;
+    border-radius:10px;
+    background-color:white;
+}
+#signUpPage table{
+	font-size: 0.9rem;
+    font-weight: 300;
+    border-collapse: collapse;
+    margin: 0 auto;/*table 중양정렬*/
+	
+}
+#signUpPage td{
+	border-bottom: 1px solid #EAEAEA;
+    padding: 1.2vw 1vw;
+    
+}
+#signUpPage td:nth-child(1){
+	width: 6vw;
+    text-align: right;
+    font-weight: 600;
+    font-size:0.9rem;
+}
+#signUpPage td:nth-child(2){
+	width:34vw;
+	font-size:0.8rem;
+}
+#signUpPage #inputName input{
+	border:none;
+	border-bottom:1px solid #D5D5D5;
+	width:11vw;
+	padding:0.5vw 0.3vw;
+}
+#signUpPage #inputId input{
+	border: none;
+    border-bottom: 1px solid #D5D5D5;
+    width: 11vw;
+    padding: 0.5vw 0.3vw;
+}
+#signUpPage #inputPw input{
+	border: none;
+    border-bottom: 1px solid #D5D5D5;
+    width: 11vw;
+    padding: 0.5vw 0.3vw;
+}
+#signUpPage #inputEmail button{
+	padding:0.4vw 1.2vw;
+	background-color:#FF8518;
+	color:white;
+	border:none;
+	border-radius:3px;
+}
+#signUpPage #inputEmail input{
+	border: none;
+    border-bottom: 1px solid #D5D5D5;
+    width: 16vw;
+    padding: 0.5vw 0.3vw;
+}
+#signUpPage #inputAddress p{
+	border:none;
+	border-bottom:1px solid #D5D5D5;
+	width:20vw;
+	padding:0.5vw 1vw;
+}
+#signUpPage #inputAddress a{
+	padding: 0.2vw 0.7vw;
+    background-color: #FF8518;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 0.7rem;
+}
+#signUpPage #inputPNum input{
+	border: none;
+    border-bottom: 1px solid #D5D5D5;
+    width: 11vw;
+    padding: 0.5vw 0.3vw;
+}
+#signUpPage #inputPNum{
+	text-align:left;
+}
+#signUpPage #inputPNum label{
+	color:#D5D5D5;
+	font-weight:300;
+}
+#signUpPage #button{
+	text-align:center;
+}
+#signUpPage #button button{
+	display:inline-block;
+	padding:0.5vw 1.7vw;
+	margin:0 1vw;
+	border-radius:3px;
+	font-size:0.8rem;
+	font-weight:500;
+	
+	width:10vw;
+	height:3vw;
+	
+	border:0.3vw solid white;
+	opacity:0.9;
+	background-color:transparent;/*배경색을 투명으로*/
+	color:white;
+	cursor:pointer;/*커서 가져다댔을때 마우스 모양바뀌도록*/
+}
+#signUpPage #button button:hover{
+	background-color:white;
+	color:#FF8518;
+}
+
+#signUpPage #signUpTable td .errorMessage{
+	font-size:0.8rem;
+	font-style:oblique;
+	color:red;
+}

@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+html{
+	font-size:100%;
+}
+body{
+	margin:0;/*기본적으로 살짝 붕떠있어서 마진을 없애주었다*/
+	width:98vw;/* height와 같이 기본적으로 내용에따라 크기가변하기때문에 그냥 처음부터 고정시켜주었다.  */
+	height:48vw;
+}
+a:link{color:black; text-decoration:none;}
+a:visited{color:black; text-decoration:none;}
+a:hover{color:black; text-decoration:underline;}
+
+/*처음 시작페이지*/
+.startPage{
+	padding:1%;/*이유는 모르겠지만 아무 내용이없는 div의 직계자손요소가 margin-top을 설정하면 현재의 div로부터 여백이 생기는게 아니라 그 위의 body로부터
+				여백이 생기고 현재의 div는 직계자선요소와 딱붙어있는다. 이런상황에서 padding값이 조금이라도있으면 문제가 해결되기에 부여해줌.
+				(모든 div에서그러는건 아니고 body바로 아래의 div에서 이런경우가 생기는듯하다. 이유는 모르겟다)*/
+	width:100%;
+	height:100%;
+	background-image:url('http://localhost/orangeBackground.png');
+	background-size:100% 120%;/*배경 이미지 크기가 좀 애매해서 적당히 늘여주었다*/
+}
+.startPage h1{
+	margin-top:10%;/*위의 padding값을 주었다는 문제의 부분. */
+	text-align:center;
+	color:white;
+	font-size:1rem;
+}
+.startPage table{
+	margin:5% auto 1% auto;
+}
+.startPage td{
+	color:white;
+	font-size:1.2em;
+	padding:2%;
+}
+.startPage td:nth-child(1){
+	text-align:center;
+}
+.startPage td:nth-child(2){
+	text-align:center;
+}
+.startPage #loginError{
+	display:block;
+	color:white;
+	text-align:center;
+}
+.startPage button{
+	display:inline-block;
+	width:10vw;
+	height:3vw;
+	
+	border:0.3vw solid white;
+	opacity:0.9;
+	background-color:transparent;/*배경색을 투명으로*/
+	color:white;
+	cursor:pointer;/*커서 가져다댔을때 마우스 모양바뀌도록*/
+}
+.startPage button:hover{
+	background-color:white;
+	color:#FF8518;
+}
+
+/* 메인 게시판 페이지 */
+#mainBoard{
+	padding:0.1%;
+	width:90%;
+	height:auto;
+	margin:0 auto 5vw auto;
+}
+
+	/*맨위 로고,마이페이지,환영문구,쪽지함 유틸부분*/
+#myUtility{
+	width: 100%;
+    height: auto;
+    text-align: right;
+    margin: 0.4vw 0 0.2vw 0;
+    font-size: 0.8rem;
+}
+#myUtility #logo{
+	float:left;
+	border:none;
+}
+#myUtility span{
+	border-right:1px solid black;	
+	padding:0 2vw;
+}
+#myUtility a{
+	border-right:1px solid black;	
+	padding:0 2vw;
+}
+#myUtility form{
+	display:inline-block;
+	padding:0 2vw;
+}
+#myUtility form input{
+	padding: 0.2vw 0.7vw;
+    background-color: #FF8518;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+
+	/*맨위 유틸바 아래 upperContent?부분*/
+#upperContent{
+	width:100%;
+	height:10vw;
+	margin:0.5vw 0 1vw 0;
+	background-image:url('http://localhost/orangeBackground.jpg');
+	background-size:cover;
+}	
+	/*main body부분. 분류창, 게시글 목록, 검색창*/
+#mainBody{
+	width:100%;
+	height:auto;
+}
+		/*분류창*/
+#sortMenu{
+	float:left;
+	width:15vw;
+	border-top:1px solid black;
+	border-bottom:1px solid black;
+}	
+#sortMenu h3{
+	margin: 1.5vw 2vw;
+}
+#sortMenu p{
+	font-size:1em;
+	margin:0 1vw;
+	padding:1vw 1vw;
+	border-top:1px solid black;
+	border-bottom:1px solid black;
+}
+#sortMenu li{
+	font-size:0.8em;
+	cursor:pointer;
+}
+#sortMenu li:hover{text-decoration:underline;}
+
+	/*iframe부분.*/
+#iframe{
+	float:left;
+	width:71vw;
+	margin:1vw 1vw;
+}
+#iframe iframe{
+	width:100%;
+	height:100%;
+	border:none;
+}
+		
+.startPage .errorMessage{
+	color:red;
+	font-size:0.8rem;
+}
+
+
+
