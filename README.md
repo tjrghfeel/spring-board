@@ -20,6 +20,7 @@
       <li>Apache와 Tomcat을 연동하였습니다. </li>
     </ul>
   </li>
+  <li>로그인은 'id : tjrghfeel / pw : tjrghfeel ' 로 들어가실 수도 있습니다. </li>
 </ul>
 
 많이 부족하지만 봐주셔서 감사합니다
